@@ -1,116 +1,106 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tonte Express Outaouais - Services de tonte de pelouse</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tonte Express Outaouais - Services de tonte de pelouse</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-          <div class="logo">Tonte Express Outaouais</div>
-          
-          <!-- Bouton hamburger -->
-          <div id="hamburger" class="hamburger" aria-label="Menu" aria-expanded="false" role="button" tabindex="0">
-            <div></div>
-            <div></div>
-            <div></div>
+  <header>
+    <nav>
+      <div class="logo">Tonte Express Outaouais</div>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="accueil" class="hero">
+      <h1>Bienvenue chez Tonte Express Outaouais</h1>
+      <p>Service fiable, abordable et rapide pour l'entretien de votre pelouse à Ottawa et en Outaouais</p>
+      <div class="features">
+        <span>✅ Professionnel</span>
+        <span>✅ Ponctuel</span>
+        <span>✅ Résultats garantis</span>
+      </div>
+      <a href="tel:5145915940" class="cta-button">📞 514 591 5940</a>
+    </section>
+
+    <section id="services">
+      <h2>Nos Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Tonte de pelouse</h3>
+          <p>Service régulier ou ponctuel</p>
+        </div>
+        <div class="service-card">
+          <h3>Ramassage des feuilles</h3>
+          <p>Entretien saisonnier</p>
+        </div>
+        <div class="service-card">
+          <h3>Entretien de terrain</h3>
+          <p>Service complet</p>
+        </div>
+      </div>
+      <p class="service-area">Zones de service : Ottawa, Gatineau, Hull, Aylmer et environ</p>
+    </section>
+
+    <section id="galerie">
+      <h2>Nos Réalisations</h2>
+      <div class="gallery">
+        <p class="coming-soon">Photos à venir</p>
+      </div>
+    </section>
+
+    <section id="apropos">
+      <h2>À propos</h2>
+      <div class="about-content">
+        <p>Nous sommes une petite entreprise basée en Outaouais, offrant un service local de tonte de pelouse aux particuliers. Nous accordons une grande importance à la fiabilité, au respect de vos espaces, et à votre satisfaction.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-info">
+        <p>📞 <a href="tel:5145915940">514 591 5940</a></p>
+        <p>📍 Service local – Ottawa & Outaouais</p>
+      </div>
+      <div class="form-container">
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Nom complet</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom complet" required />
           </div>
-      
-          <ul id="nav-menu">
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#galerie">Galerie</a></li>
-            <li><a href="#apropos">À propos</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      
+          <div class="form-group">
+            <label for="email">Adresse e-mail</label>
+            <input type="email" id="email" name="email" placeholder="Votre e-mail" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Téléphone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+          </div>
+          <button type="submit" class="submit-button">Envoyer</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
-    <main>
-        <section id="accueil" class="hero">
-            <h1>Bienvenue chez Tonte Express Outaouais</h1>
-            <p>Service fiable, abordable et rapide pour l'entretien de votre pelouse à Ottawa et en Outaouais</p>
-            <div class="features">
-                <span>✅ Professionnel</span>
-                <span>✅ Ponctuel</span>
-                <span>✅ Résultats garantis</span>
-            </div>
-            <a href="tel:5145915940" class="cta-button">📞 514 591 5940</a>
-        </section>
+  <footer>
+    <p>&copy; 2024 Tonte Express Outaouais. Tous droits réservés.</p>
+  </footer>
 
-        <section id="services">
-            <h2>Nos Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Tonte de pelouse</h3>
-                    <p>Service régulier ou ponctuel</p>
-                </div>
-                <div class="service-card">
-                    <h3>Ramassage des feuilles</h3>
-                    <p>Entretien saisonnier</p>
-                </div>
-                <div class="service-card">
-                    <h3>Entretien de terrain</h3>
-                    <p>Service complet</p>
-                </div>
-            </div>
-            <p class="service-area">Zones de service : Ottawa, Gatineau, Hull, Aylmer et environ</p>
-        </section>
-
-        <section id="galerie">
-            <h2>Nos Réalisations</h2>
-            <div class="gallery">
-                <!-- Add your images here -->
-                <p class="coming-soon">Photos à venir</p>
-            </div>
-        </section>
-
-        <section id="apropos">
-            <h2>À propos</h2>
-            <div class="about-content">
-                <p>Nous sommes une petite entreprise basée en Outaouais, offrant un service local de tonte de pelouse aux particuliers. Nous accordons une grande importance à la fiabilité, au respect de vos espaces, et à votre satisfaction.</p>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <div class="contact-info">
-                <p>📞 <a href="tel:5145915940">514 591 5940</a></p>
-                <p>📍 Service local – Ottawa & Outaouais</p>
-            </div>
-            <div class="form-container">
-                <form id="contact-form">
-                    <div class="form-group">
-                        <label for="name">Nom complet</label>
-                        <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Adresse e-mail</label>
-                        <input type="email" id="email" name="email" placeholder="Votre e-mail" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Téléphone</label>
-                        <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Votre message" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-button">Envoyer</button>
-                </form>
-            </div>
-        </section>
-        
-        
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Tonte Express Outaouais. Tous droits réservés.</p>
-    </footer>
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
-</html> 
+</html>
