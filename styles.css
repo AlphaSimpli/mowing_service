@@ -50,19 +50,19 @@ nav {
 }
 
 /* Nav links */
-nav ul {
+nav ul.nav-links {
     display: flex;
     list-style: none;
 }
 
-nav ul li a {
+nav ul.nav-links li a {
     color: #fff;
     text-decoration: none;
     padding: 0.5rem 1rem;
     transition: color 0.3s;
 }
 
-nav ul li a:hover {
+nav ul.nav-links li a:hover {
     color: #3498db;
 }
 
@@ -326,7 +326,7 @@ footer {
     }
 
     /* Menu caché par défaut */
-    nav ul {
+    nav ul.nav-links {
         flex-direction: column;
         margin-top: 1rem;
         max-height: 0;
@@ -338,15 +338,15 @@ footer {
     }
 
     /* Quand menu ouvert (classe 'open' ajoutée en JS) */
-    nav ul.open {
+    nav ul.nav-links.open {
         max-height: 500px; /* assez grand pour montrer tous les liens */
     }
 
-    nav ul li {
+    nav ul.nav-links li {
         margin: 0.4rem 0;
     }
 
-    nav ul li a {
+    nav ul.nav-links li a {
         display: block;
         padding: 1rem 0;
         border-top: 1px solid #34495e;
