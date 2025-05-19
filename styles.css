@@ -53,7 +53,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('lawn-bg.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image1.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -184,6 +184,8 @@ nav ul li a:hover {
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #2c3e50;
 }
 
 .form-group input,
@@ -192,10 +194,20 @@ nav ul li a:hover {
     padding: 0.5rem;
     border: 1px solid #ddd;
     border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3498db;
 }
 
 .form-group textarea {
     height: 150px;
+    resize: vertical;
 }
 
 .submit-button {
@@ -207,6 +219,7 @@ nav ul li a:hover {
     cursor: pointer;
     width: 100%;
     font-size: 1rem;
+    font-weight: 600;
     transition: background-color 0.3s;
 }
 
@@ -276,7 +289,7 @@ h2 {
     }
 }
 
-/* Google Form Container */
+/* Form Container */
 .form-container {
     max-width: 800px;
     margin: 0 auto;
@@ -285,9 +298,3 @@ h2 {
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
-
-.form-container iframe {
-    border: none;
-    width: 100%;
-    min-height: 800px;
-} 
