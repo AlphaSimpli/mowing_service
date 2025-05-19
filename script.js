@@ -1,5 +1,5 @@
 // Initialize EmailJS with your public key
-emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your actual public key
+emailjs.init("TUaXa3FeoCG93amNT"); // Remplace par ta clé publique
 
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contact-form');
@@ -8,13 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Show loading state
             const submitButton = contactForm.querySelector('.submit-button');
             const originalButtonText = submitButton.textContent;
             submitButton.textContent = 'Envoi en cours...';
             submitButton.disabled = true;
             
-            // Get form data
             const formData = {
                 name: document.getElementById('name').value,
                 email: document.getElementById('email').value,
@@ -22,21 +20,19 @@ document.addEventListener('DOMContentLoaded', function() {
                 message: document.getElementById('message').value
             };
             
-            // Send email using EmailJS
-            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData)
+            emailjs.send('service_qp2udwg', 'template_ob07e25', formData)
                 .then(function() {
-                    alert('Merci pour votre message! Nous vous contacterons bientôt.');
+                    alert('Merci pour votre message ! Nous vous contacterons bientôt.');
                     contactForm.reset();
                 })
                 .catch(function(error) {
                     alert('Désolé, une erreur est survenue. Veuillez réessayer plus tard.');
-                    console.error('Error:', error);
+                    console.error('Erreur EmailJS:', error);
                 })
                 .finally(function() {
-                    // Reset button state
                     submitButton.textContent = originalButtonText;
                     submitButton.disabled = false;
                 });
         });
     }
-}); 
+});
