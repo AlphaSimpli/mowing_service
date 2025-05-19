@@ -40,7 +40,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // --- GESTION DU MENU HAMBURGER ---
     const menuToggle = document.querySelector('.menu-toggle');
-    const menu = document.querySelector('nav ul.menu');
+    const menu = document.querySelector('nav ul.nav-links');
+
 
     if (menuToggle && menu) {
         menuToggle.addEventListener('click', function () {
