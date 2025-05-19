@@ -46,6 +46,9 @@ document.addEventListener('DOMContentLoaded', function () {
     if (menuToggle && menu) {
         menuToggle.addEventListener('click', function () {
             menu.classList.toggle('active');
+        menuToggle.addEventListener('touchstart', function(e) {
+            e.preventDefault(); // empêche double déclenchement click+touchstart
+            toggleMenu();
         });
     }
 });
